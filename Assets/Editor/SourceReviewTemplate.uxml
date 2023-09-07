@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <ui:VisualElement name="MainBlock" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; align-items: stretch; justify-content: space-between; align-self: stretch; width: 422px; height: 164px;">
+        <ui:VisualElement name="SpriteArea" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 180px; width: -15px; flex-direction: row; justify-content: space-between; align-self: stretch; align-items: flex-start;" />
+        <ui:VisualElement name="TextArea" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 186px; align-items: stretch; flex-direction: column; justify-content: space-around; align-self: stretch; height: 174px;">
+            <ui:IntegerField label="ID" value="0" name="IDField" readonly="true" style="justify-content: flex-start; align-items: stretch; align-self: stretch; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-background-scale-mode: stretch-to-fill; -unity-text-align: middle-left; white-space: nowrap; margin-left: 4px; margin-right: 4px; margin-top: 1px; text-overflow: clip; -unity-text-outline-width: -70px; width: 293px;" />
+            <ui:TextField picking-mode="Ignore" label="Name" value=" " name="NameField" readonly="true" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

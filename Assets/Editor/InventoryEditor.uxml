@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/InventoryEditor.uss?fileID=7433441132597879392&amp;guid=b21f09dfac1a7914eafabc975702d9ee&amp;type=3#InventoryEditor" />
+    <ui:VisualElement name="MainBlock" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; align-self: stretch; justify-content: flex-start; align-items: stretch;">
+        <ui:VisualElement name="ListBlock" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-items: flex-start; justify-content: space-around; width: 121px; height: 856px; align-self: stretch;">
+            <ui:ListView focusable="true" name="SourceListView" reorder-mode="Simple" show-foldout-header="false" horizontal-scrolling="false" reorderable="false" show-border="true" selection-type="Single" virtualization-method="DynamicHeight" style="height: 823px; width: 520px; border-left-color: rgba(140, 110, 110, 0); border-right-color: rgba(113, 113, 113, 0); border-top-color: rgba(140, 110, 110, 0); border-bottom-color: rgba(140, 110, 110, 0); align-items: flex-start; justify-content: center; align-self: stretch; border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; position: relative;" />
+            <ui:VisualElement name="SouorceListController" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 85px; width: 520px; flex-direction: row; justify-content: space-around; align-items: stretch; align-self: stretch;">
+                <ui:Button text="增加新的资源" display-tooltip-when-elided="true" name="Add" style="white-space: nowrap; -unity-text-align: middle-center; width: 269px; height: 60px;" />
+                <ui:Button text="删除选中资源" display-tooltip-when-elided="true" name="Remove" style="width: 248px; height: 59px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ShowBlock" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 601px; align-self: flex-start; justify-content: center; align-items: flex-start;">
+            <ui:VisualElement name="Review" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 119px; flex-direction: row; justify-content: center;">
+                <ui:VisualElement name="SpriteShow" focusable="false" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: -162px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-top-left-radius: 1px; border-bottom-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; align-self: stretch; justify-content: center;" />
+                <ui:VisualElement name="TestShow" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 253px; align-self: stretch; justify-content: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="IntroductionEditor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 647px; align-self: stretch; align-items: stretch; justify-content: space-around;">
+                <ui:VisualElement name="VisualArea" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 159px; width: 602px; align-self: flex-start; justify-content: center;">
+                    <uie:ObjectField label="SpriteField" name="SpirteField" focusable="false" style="height: 89px; color: rgb(89, 65, 65); -unity-text-align: middle-center; justify-content: space-around; flex-direction: row; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-top-left-radius: 1px; border-bottom-left-radius: 1px; border-top-right-radius: 1px; border-bottom-right-radius: 1px; visibility: visible; display: flex; overflow: hidden; cursor: initial; background-color: rgba(113, 104, 104, 0); align-self: flex-start;" />
+                    <ui:TextField picking-mode="Ignore" label="Name&#10;" value="filler text" name="NameField" style="height: 42px; width: 601px; align-items: center; justify-content: space-between; align-self: flex-start; -unity-text-align: upper-center;" />
+                    <ui:TextField picking-mode="Ignore" label="Introduction&#10;" value="1" name="IntroductionField" usage-hints="None" readonly="false" style="height: 167px; -unity-text-align: upper-center; width: 593px; align-self: flex-start; justify-content: space-around; overflow: hidden; flex-direction: row; flex-wrap: wrap; align-items: flex-start; -unity-background-scale-mode: stretch-to-fill;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="InvisualArea" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 233px; flex-direction: column; align-self: stretch; align-items: stretch; justify-content: space-around;">
+                    <ui:IntegerField label="ID&#10;" value="42" name="IDField" style="flex-direction: row; align-items: stretch; justify-content: flex-start; align-self: flex-start; width: 592px; -unity-text-align: middle-center;" />
+                    <ui:VisualElement name="TransformationTable" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 251px; flex-direction: column; align-self: stretch; justify-content: flex-start; align-items: flex-start;">
+                        <ui:ListView focusable="true" name="TransformationList" virtualization-method="DynamicHeight" show-foldout-header="false" horizontal-scrolling="true" reorderable="false" show-border="true" style="height: 329px; width: 698px; justify-content: flex-start; align-self: auto; flex-direction: row; align-items: auto;" />
+                        <ui:VisualElement name="TransformationController" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 85px; width: 520px; flex-direction: row; justify-content: space-around; align-items: stretch; align-self: stretch;">
+                            <ui:Button text="增加新的资源转换" display-tooltip-when-elided="true" name="Add" style="white-space: nowrap; -unity-text-align: middle-center; width: 269px; height: 60px;" />
+                            <ui:Button text="删除选中资源转换" display-tooltip-when-elided="true" name="Remove" style="width: 248px; height: 59px;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

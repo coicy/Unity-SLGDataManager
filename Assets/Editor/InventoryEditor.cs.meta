@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6c8de34123eeff6448ac8d003d9983d4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - m_VisualTreeAsset: {fileID: 9197481963319205126, guid: c99073acc6f0ced488b278d318bad7d6, type: 3}
+  - TransformationTableTemplate: {fileID: 9197481963319205126, guid: bcf663d755f04674dbbde8a72aa36b43, type: 3}
+  - SourceReviewTemplate: {fileID: 9197481963319205126, guid: 96e2d9642c7a6ad4c85e53b931c675ab, type: 3}
+  - White: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  - SourceInventory: {fileID: 11400000, guid: 8d4ea1347a477904e8d508f95ccc1b3b, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
